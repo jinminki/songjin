@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GANGFORM SMART MONITORING</title>
+    <link rel="stylesheet" href="99갱폼공정현황.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* 배경색 변경 가능 */
+            font-family: Arial, sans-serif; /* 폰트 변경 가능 */
+            display: flex;
+            justify-content: center; /* 수평 가운데 정렬 */
+            align-items: center; /* 수직 가운데 정렬 */
+            height: 100vh;
+            position: relative; /* 상대 위치 설정 */
+        }
+
+        .text-container {
+            position: absolute;
+            top: 100px;
+            left: -60px; 
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* 수직 가운데 정렬 */
+            justify-content: space-around; /* 텍스트 간격 조절 */
+            height: 80%; /* 컨테이너 높이 조절 */
+            width: 400px; /* 컨테이너 너비 조절 */
+            background-color: transparent; /* 배경색 변경 가능 */
+            z-index: 999; /* 다른 요소 위에 배치 */
+        }
+
+        .text {
+            font-size: 18px; /* 텍스트 크기 변경 가능 */
+            color: white; /* 텍스트 색상 변경 가능 */
+            text-align: center; /* 텍스트 가운데 정렬 */
+        }
+
+           /* 천천히 노란색으로 변하는 애니메이션 */
+           @keyframes yellowGlow {
+            0% { color: white; }
+            50% { color: yellow; }
+            100% { color: white; }
+        }
+
+        /* 애니메이션 적용 */
+        .yellow-glow {
+            animation: yellowGlow 1.5s infinite;
+        }
+
+        /* 빨간색에서 원래 색으로 천천히 변하는 애니메이션 */
+        @keyframes redToNormal {
+            0% { color: red; }
+            50% { color: white; }
+            100% { color: red; }
+        }
+
+        /* 애니메이션 적용 */
+        .red-to-normal {
+            animation: redToNormal 1s infinite;
+        }
+
+        /* 볼드체 텍스트 스타일 */
+        .bold-text {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1><a href="index2.html">SONGJIN</a></h1>
+        </div>
+    </div>
+
+    <div class="text-container">
+        <!-- 세로로 11칸의 텍스트 -->
+        <div class="text bold-text" style="font-size: 28px; color: white;">A동 10층 A-TYPE<br>갱폼 공정 현황</div>
+        <div class="text" style="font-size: 18px; color: white;">갱폼 입고 및 지상조립</div>
+        <div class="text" style="font-size: 18px; color: white;">갱폼 최초 설치</div>
+        <div class="text" style="font-size: 18px; color: white;">고정볼트 작업</div>
+        <div class="text yellow-glow bold-text" style="font-size: 18px;">철근 및 거푸집 설치</div>
+        <div class="text" style="font-size: 18px; color: white;">콘크리트 타설</div>
+        <div class="text" style="font-size: 18px; color: white;">인양장비에 갱폼 지지</div>
+        <div class="text" style="font-size: 18px; color: white;">전단볼트 해체</div>
+        <div class="text" style="font-size: 18px; color: white;">갱폼 인양</div>
+        <div class="text" style="font-size: 18px; color: white;">하부 케이지 설치</div>
+        <div class="text" style="font-size: 18px; color: white;">분진망 설치</div>
+    </div>
+    <div class="text-container" style="top: 133px; left: 500px; transform: translate(-50%, -50%);">
+        <div class="text bold-text red-to-normal" style="font-size: 28px;">갱폼안전인양시스템 상승</div>
+    </div>
+</body>
+</html>

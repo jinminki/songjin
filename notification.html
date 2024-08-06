@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>점검필요알림</title>
+    <link rel="stylesheet" href="notification.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 id="notification-title">점검필요알림</h1>
+        </div>
+        <div class="content-box">
+            <div class="sub-header">
+                <span class="date">날짜</span>
+                <span class="notification">알림 항목</span>
+                <span class="status">상태</span>
+                <span class="remark">비고</span>
+            </div>            
+            <table id="notification-list">
+                <tbody>
+                    <tr>
+                        <td>2024-08-03</td>
+                        <td>103동 C-2 갱폼안전인양시스템</td>
+                        <td>불량</td>
+                        <td>즉시 조치 필요</td>
+                    </tr>
+                    <tr>
+                        <td>2024-08-03</td>
+                        <td>103동 C-1 갱폼안전인양시스템</td>
+                        <td>불량</td>
+                        <td>즉시 조치 필요</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="notification.js"></script>
+</body>
+</html>

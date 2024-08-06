@@ -1,0 +1,111 @@
+@font-face {
+    font-family: abster;
+    src: url('font/abster-webfont.woff') format('woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white; /* 모든 텍스트 색상을 흰색으로 설정 */
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Nanum Gothic', sans-serif;
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url('images/배경화면1.jpg') no-repeat center center/cover;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.header {
+    width: 100%; /* 전체 너비 사용 */
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* 가운데 정렬 */
+}
+
+.header h1 {
+    text-decoration: none;
+    color: white;
+    font-family: abster;
+    font-size: 36px; /* 텍스트 크기 고정 */
+}
+
+.content {
+    width: 800px; /* 고정된 너비 */
+    margin: 0 auto;
+    padding-top: 100px; /* header height만큼 위쪽 여백을 설정 */
+    background: rgba(74, 74, 74, 0.8); /* 반투명 회색 배경으로 변경 */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: white; /* 모든 텍스트 색상을 흰색으로 설정 */
+}
+
+.sub-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 18px; /* 텍스트 크기 조정 */
+}
+
+.sub-header {
+    position: relative; /* 자식 요소들의 절대 위치를 설정하기 위해 상대 위치로 설정 */
+    height: 30px; /* 높이 설정 */
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 18px; /* 텍스트 크기 조정 */
+}
+
+.sub-header span {
+    position: absolute; /* 절대 위치 설정 */
+}
+
+.sub-header .date {
+    left: 55px; /* 날짜 위치 설정 */
+}
+
+.sub-header .notification {
+    left: 280px; /* 알림 항목 위치 설정 */
+}
+
+.sub-header .status {
+    left: 520px; /* 상태 위치 설정 */
+}
+
+.sub-header .remark {
+    left: 650px; /* 비고 위치 설정 */
+}
+
+
+
+#inspection-list {
+    width: 100%;
+    border-collapse: collapse;
+    color: white; /* 모든 텍스트 색상을 흰색으로 설정 */
+}
+
+#inspection-list td { 
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+#inspection-list tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#inspection-list tr:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+

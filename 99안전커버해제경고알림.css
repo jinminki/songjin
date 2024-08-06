@@ -1,0 +1,44 @@
+@font-face {
+    font-family: abster;
+    src: url(font/abster-webfont.woff) format('woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url(images/배경화면1.jpg);
+}
+
+.container .header {
+    width: 80%;
+    height: 80px;
+    position: absolute;
+    top: 15px;
+    left: 40px;
+}
+
+.container .header h1 a {
+    text-decoration: none;
+    color: white;
+    font-family: abster;
+}
+
+@keyframes colorChange {
+    0% { background-color: white; } /* 원래 색 */
+    50% { background-color: red; } /* 빨간색 */
+    100% { background-color: white; } /* 원래 색 */
+}
+
+/* 알람창 애니메이션 적용 */
+.alert-box {
+    animation: colorChange 1.5s infinite; /* 애니메이션 적용 */
+}
+
+
+
